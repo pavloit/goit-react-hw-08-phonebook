@@ -3,7 +3,6 @@ import { deleteContact } from '../../redux/contactsOperations';
 import styled from 'styled-components';
 
 const ButtonDel = styled.button`
-  border: 2px dotted red;
   font-weight: 900;
   color: red;
   border-radius: 50%;
