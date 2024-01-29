@@ -43,11 +43,11 @@ const LoginFormPage = () => {
       <form onSubmit={handleSubmit}>
         <FormControl id="email" isRequired>
           <FormLabel color="white">Email:</FormLabel>
-          <Input type="email" value={email} onChange={handleEmailChange} />
+          <Input type="email" color="yellow" value={email} onChange={handleEmailChange} />
         </FormControl>
         <FormControl id="password" isRequired mt={4}>
           <FormLabel color="white">Password:</FormLabel>
-          <Input type="password" value={password} onChange={handlePasswordChange} />
+          <Input type="password" color="yellow" value={password} onChange={handlePasswordChange} />
         </FormControl>
         <Checkbox color="white" mt={4} onChange={handleRememberMeChange}>Remember me</Checkbox>
         <Button mt={4} colorScheme="blue" size="md" width="full" type="submit">Login</Button>

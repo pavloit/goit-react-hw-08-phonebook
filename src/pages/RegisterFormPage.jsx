@@ -32,23 +32,23 @@ const RegisterFormPage = () => {
   };
 
   return (
-    <Box p={5} bgGradient="linear(to-r, teal.500, green.500)" borderRadius="md">
+    <Box p={5} bgGradient="linear(to-r, pink.800, pink.700, pink.800) " borderRadius="lg">
       <Text fontSize="2xl" mb={5} color="white">Register</Text>
       {registerError && <Text color="red.500">{registerError}</Text>}
       <form onSubmit={handleSubmit}>
         <FormControl id="name" isRequired>
           <FormLabel color="white">Name:</FormLabel>
-          <Input type="text" value={name} onChange={handleNameChange} />
+          <Input type="text" color="yellow" value={name} onChange={handleNameChange} />
         </FormControl>
         <FormControl id="email" isRequired mt={4}>
           <FormLabel color="white">Email:</FormLabel>
-          <Input type="email" value={email} onChange={handleEmailChange} />
+          <Input type="email" color="yellow" value={email} onChange={handleEmailChange} />
         </FormControl>
         <FormControl id="password" isRequired mt={4}>
           <FormLabel color="white">Password:</FormLabel>
-          <Input type="password" value={password} onChange={handlePasswordChange} />
+          <Input type="password" color="yellow" value={password} onChange={handlePasswordChange} />
         </FormControl>
-        <Button mt={4} colorScheme="teal" size="lg" width="full" type="submit">Register</Button>
+        <Button mt={4} colorScheme="blue" size="lg" width="full" type="submit">Register</Button>
       </form>
     </Box>
   );

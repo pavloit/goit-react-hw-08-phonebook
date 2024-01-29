@@ -17,8 +17,8 @@ const UserMenu = () => {
 
   return (
     <Box>
-      {authState && authState.user && <Text>Welcome, {authState.user.email}</Text>}
-      {authState && authState.user && <Button onClick={handleLogout} colorScheme="teal">Logout</Button>}
+      {authState && authState.user && <Text color="blue">Welcome, {authState.user.name}</Text>}
+      {authState && authState.user && <Button onClick={handleLogout} colorScheme="blue">Logout</Button>}
     </Box>
   );
 };

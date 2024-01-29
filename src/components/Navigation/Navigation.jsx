@@ -7,16 +7,20 @@ const Navigation = () => {
   const authState = useSelector(state => state.auth);
 
   return (
-    <Box bg="teal.500" p={4}>
+    <Box bg="gray.400" p={5}>
       <ButtonGroup variant="outline" spacing="6">
-        <Button as={RouterLink} to="/register" colorScheme={match?.params.page === 'register' ? 'pink' : 'teal'}>
+        
+        <Button as={RouterLink} to="/register" colorScheme={match?.params.page === 'register' ? 'black' : 'blue'}>
           Register
-        </Button>
-        <Button as={RouterLink} to="/login" colorScheme={match?.params.page === 'login' ? 'pink' : 'teal'}>
+          </Button>
+        
+        
+        <Button as={RouterLink} to="/login" colorScheme={match?.params.page === 'login' ? 'black' : 'blue'}>
           Login
-        </Button>
+          </Button>
+        
         {authState && authState.user && (
-          <Button as={RouterLink} to="/contacts" colorScheme={match?.params.page === 'contacts' ? 'pink' : 'teal'}>
+          <Button as={RouterLink} to="/contacts" colorScheme={match?.params.page === 'contacts' ? 'black' : 'blue'}>
             Contacts
           </Button>
         )}
